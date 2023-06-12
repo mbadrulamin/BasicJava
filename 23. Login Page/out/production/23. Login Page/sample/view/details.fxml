@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ad1457;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
+   <children>
+      <Label fx:id="detailsWelcomeLabel" layoutX="515.0" layoutY="14.0" prefHeight="20.0" prefWidth="158.0" text="Welcome " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="29.0" layoutY="44.0" prefHeight="141.0" prefWidth="642.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="99.0" layoutX="30.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/photo_2020-03-06_10-40-09.jpg" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <Label fx:id="detailsName" layoutX="195.0" layoutY="23.0" prefHeight="20.0" prefWidth="328.0" text="Name: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsAge" layoutX="195.0" layoutY="61.0" prefHeight="20.0" prefWidth="328.0" text="Age: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="detailsProfession" layoutX="195.0" layoutY="95.0" prefHeight="20.0" prefWidth="328.0" text="Profession: ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="245.0" layoutY="210.0" prefHeight="142.0" prefWidth="434.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <AnchorPane layoutY="-3.0" prefHeight="54.0" prefWidth="434.0" style="-fx-background-color: #e35183;" />
+            <Label layoutX="149.0" layoutY="14.0" text="How to Find Me" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="47.0" layoutX="63.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-facebook-16.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="29.0" layoutX="60.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-linkedin-64.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="detailsFB" layoutX="85.0" layoutY="59.0" text="https://www.facebook.com/muhamadbadrul.amin.180/" />
+            <Hyperlink fx:id="detailsLinkIn" layoutX="88.0" layoutY="87.0" text="https://www.linkedin.com/in/badrul-amin-69029816b" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
